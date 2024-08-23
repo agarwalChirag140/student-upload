@@ -1,0 +1,84 @@
+.employee-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 100px auto;
+  max-width: 800px;
+}
+
+.mat-tab-group {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.mat-tab-label {
+  font-weight: 500;
+  color: #424242;
+}
+
+.mat-tab-label-active {
+  color: #1976d2;
+}
+
+.employee-details {
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th {
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: 500;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #555;
+}
+
+.records {
+  text-align: right;
+}
+
+.success-count {
+  color: #388e3c;
+}
+
+.failure-count {
+  color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .employee-card {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 20px; /* Adds space between the buttons */
+}
+
+button {
+  min-width: 150px;
+}
+
+
+  

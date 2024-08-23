@@ -1,0 +1,28 @@
+<div class="upload-container">
+    <h2>Upload CSV</h2>
+    <div class="file-drop-area">
+        <div class="upload-icon">
+            <i class="fas fa-upload"></i> <!-- FontAwesome icon -->
+        </div>
+        <label for="file-upload" class="upload-label">
+            Select a CSV file to upload or drag and drop it here
+        </label>
+        <input type="file" id="file-upload" (change)="onFileSelected($event)" class="file-input">
+    </div>
+
+    <div *ngIf="fileName && isFileValid" class="file-name">
+        <p><strong>Selected File:</strong> {{ fileName }}</p>
+    </div>
+
+    <!-- <p class="separator-text">Or upload from URL</p>
+
+    <div class="url-upload">
+        <input type="text" [(ngModel)]="csvUrl" placeholder="Enter URL" class="url-input"/>
+        <button (click)="uploadFromUrl()" class="url-upload-button">Upload</button>
+    </div> -->
+
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    <button mat-raised-button color="primary" (click)="goToPreview()" [disabled]="!isFileValid">Preview Page</button>
+</div>
+
+

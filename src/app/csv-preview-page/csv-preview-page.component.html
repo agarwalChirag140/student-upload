@@ -1,0 +1,53 @@
+<mat-card class="csv-preview-card">
+  <mat-card-title>Preview CSV Data</mat-card-title>
+  <mat-card-content>
+    <!-- Button for generating summary report -->
+    <div class="report-button-container">
+      <button mat-raised-button color="primary" (click)="generateSummaryReport()">
+        Generate Summary Report
+      </button>
+    </div>
+    
+    <!-- Table displaying CSV data -->
+    <table class="csv-preview-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>City</th>
+          <th>Address</th>
+          <th>GPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let element of dataSource">
+          <td>
+            {{ element.Name }}
+            <div *ngIf="element.errors?.Name" class="error-message">{{ element.errors.Name }}</div>
+          </td>
+          <td>
+            {{ element.Email }}
+            <div *ngIf="element.errors?.Email" class="error-message">{{ element.errors.Email }}</div>
+          </td>
+          <td>
+            {{ element['Phone number'] }}
+            <div *ngIf="element.errors?.PhoneNumbr" class="error-message">{{ element.errors.PhoneNumbr }}</div>
+          </td>
+          <td>
+            {{ element.City }}
+            <div *ngIf="element.errors?.City" class="error-message">{{ element.errors.City }}</div>
+          </td>
+          <td>
+            {{ element.Address }}
+            <div *ngIf="element.errors?.Address" class="error-message">{{ element.errors.Address }}</div>
+          </td>
+          <td>
+            {{ element.GPA }}
+            <div *ngIf="element.errors?.GPA" class="error-message">{{ element.errors.GPA }}</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card-content>
+</mat-card>

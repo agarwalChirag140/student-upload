@@ -1,0 +1,72 @@
+.csv-preview-card {
+  max-width: 100%;
+  overflow: auto;
+  margin: 16px;
+}
+
+
+mat-card-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.csv-preview-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.csv-preview-table thead {
+  background-color: #f4f4f4;
+}
+
+.csv-preview-table th,
+.csv-preview-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.csv-preview-table th {
+  font-weight: bold;
+}
+
+.csv-preview-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.csv-preview-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  display: block;
+}
+
+.report-button-container {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+button {
+  margin: 8px;
+}
+
+button.mat-raised-button {
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 8px 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button.mat-raised-button:hover {
+  background-color: #1976d2; /* Adjust based on theme */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
