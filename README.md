@@ -1,27 +1,33 @@
-# StudentUpload
+# Angular Data Validation Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+This Angular project is designed to handle data validation for various types of inputs, including names, cities, addresses, GPAs, emails, and phone numbers. The validation logic ensures that data meets specific criteria before being processed.
 
-## Development server
+## Project Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The application performs the following tasks:
+- Validates and processes CSV files containing student data.
+- Displays validation errors for incorrect data.
+- Ensures that each data field adheres to predefined rules.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Name, City, Address Validation:** Ensures these fields are strings and not empty.
+- **GPA Validation:** Checks if the GPA value is a number between 0 and 10.
+- **Email Validation:** Verifies that the email follows a valid format.
+- **Phone Number Validation:** Ensures the phone number is a 10-digit integer.
 
-## Build
+## Setup Instructions
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+Ensure you have the following installed:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Node.js** :- 22.6.0
+- **npm** :- 10.8.2
+- **Angular CLI** :- 18.2.1
 
-## Running end-to-end tests
+### Installation Steps
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Clone the repository** :- git clone  https://github.com/agarwalChirag140/student-upload.git
+- **Installing the dependency** :- npm Install
+- **Start The angular server** :- ng s
